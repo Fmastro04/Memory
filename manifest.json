@@ -1,0 +1,17 @@
+{
+	"lang": "en-us",
+	"name": "memory game app",
+	"short_name": "memory game",
+	"description": "a simple memory card game",	
+    "start_url": "/",
+	"background_color": "#2f3d58",
+	"theme_color": "#2f3d58",
+	"orientation": "any",
+	"display": "standalone",
+	"icons": [
+		{
+			"src": "/unamed.png",
+			"sizes": "512x512"
+		}
+	]
+}

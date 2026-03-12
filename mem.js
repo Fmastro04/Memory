@@ -79,6 +79,4 @@ self.addEventListener("fetch", e => {
     })());
 });
 
-if('serviceWorker' in navigator) {
-navigator.serviceWorker.register('/mem.js', { scope: '/' });
-}
+
