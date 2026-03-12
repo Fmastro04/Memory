@@ -1,4 +1,4 @@
-const CACHE_NAME = 'memory-game-v1';
+const CACHE_NAME = 'memory-gameapp-v1';
 
 self.addEventListener("install", e => {
     e.waitUntil((async () => {
@@ -24,7 +24,7 @@ self.addEventListener("fetch", e => {
                 cache.put(e.request,fetchResponse.clone());
                 return fetchResponse;
             } catch(e){
-
+                console.log("errore:(");
             }
         }
     })());
