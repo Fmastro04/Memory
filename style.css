@@ -1,0 +1,54 @@
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button .b{
+    border-radius: 30%;
+    width: 100px;
+    height: 30px;
+}
+
+.carte{
+    display: grid;
+    grid-template-columns: repeat(4,70px);
+    grid-template-rows: repeat(4,1fr);
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.carte .sfondo{
+    display: flex;
+    font-size: 50px;
+    background-color: rgb(214, 193, 193);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+ 
+.carte .sfondo .img{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.carte .sfondo.visibile .img{
+    opacity:1;
+}
