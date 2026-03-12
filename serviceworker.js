@@ -4,12 +4,9 @@ self.addEventListener("install", e => {
     e.waitUntil((async () => {
         const cache = await caches.open(CACHE_NAME);
         cache.addAll([
-           './',
-    'index.html',
-    'mem.js',
-    'style.css',
-    'unnamed.png', // Aggiungi anche l'icona per l'offline
-    'manifest.json'
+            '/',
+            '/mem.js',
+            '/style.css'
         ]);
     })());
 });

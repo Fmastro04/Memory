@@ -3,15 +3,14 @@
     "name": "Memory Game App",
     "short_name": "Memory",
     "description": "Un semplice gioco di memoria", 
-    "start_url": "./index.html",
+    "start_url": "/",
     "background_color": "#2f3d58",
     "theme_color": "#2f3d58",
     "display": "standalone",
     "icons": [
         {
-            "src": "unnamed.png", 
-            "sizes": "512x512",
-            "type": "image/png"
+            "src": "/unnamed.png", 
+            "sizes": "512x512"
         }
     ]
 }
