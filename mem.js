@@ -25,6 +25,8 @@ function controllaCoppia(){
 
     if(img1 === img2){
         carteGirate = [];
+        carteGirate[0].classList.toggle('indovinata')
+        carteGirate[1].classList.toggle('indovinata')
     }
     else {
         setTimeout(function() {
