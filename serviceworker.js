@@ -1,12 +1,15 @@
-const CACHE_NAME = 'memory-gameapp-v1';
+const CACHE_NAME = 'memory-gameapp-v2';
 
 self.addEventListener("install", e => {
     e.waitUntil((async () => {
         const cache = await caches.open(CACHE_NAME);
         cache.addAll([
-            '/',
-            '/mem.js',
-            '/style.css'
+            './',
+            './index.html',
+            './mem.js',
+            './style.css',
+            './memory.png',
+            './manifest.json'
         ]);
     })());
 });
