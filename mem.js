@@ -4,6 +4,8 @@ const dispMosse = document.querySelector('.mosse')
 
 let carteGirate = [];
 let mosse = 0;
+let coppieTrovate = 0;
+let coppieTot = carte.length/2;
 
 carte.forEach(function(carta) {
     carta.addEventListener("click", function() {
@@ -27,6 +29,14 @@ function controllaCoppia(){
         
        carteGirate[0].classList.toggle('indovinata');
         carteGirate[1].classList.toggle('indovinata');
+        coppieTrovate++;
+        if(coppieTrovate === coppieTot){
+            setTimeout(function() {
+       
+                alert("Hai vinto! 🎉\nHai completato il gioco in " + mosse + "🎉 mosse.")
+        
+    }, 500);
+        }
         carteGirate = [];
     }
     else {
@@ -37,6 +47,7 @@ function controllaCoppia(){
         
     }, 1000);
 }
+
 }
 
 function reset(){
