@@ -24,9 +24,10 @@ function controllaCoppia(){
     const img2 = carteGirate[1].querySelector('.img').innerHTML;
 
     if(img1 === img2){
+        
+       carteGirate[0].classList.toggle('indovinata');
+        carteGirate[1].classList.toggle('indovinata');
         carteGirate = [];
-        carteGirate[0].classList.toggle('indovinata')
-        carteGirate[1].classList.toggle('indovinata')
     }
     else {
         setTimeout(function() {
